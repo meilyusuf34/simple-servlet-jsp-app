@@ -6,9 +6,9 @@
 <head>
     <title>Welcome</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
     <script src="assets/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
                     $(".student-id").click(function() {
@@ -21,7 +21,8 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Student Dashboard</h1>
+        <h1 class="text-left mb-4">Student Dashboard</h1>
+        <h2 class="text-left mb-4"><p>Welcome, ${username} </p></h2>
         <table class="table table-bordered">
             <thead>
                 <tr>

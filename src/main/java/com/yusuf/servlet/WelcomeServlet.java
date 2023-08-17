@@ -32,6 +32,8 @@ public class WelcomeServlet extends HttpServlet {
 
         // Store the student list in the request attribute
         request.setAttribute("students", students);
+        String username = request.getParameter("username");
+        request.setAttribute("username", username);
 
         // Forward the request to the welcome.jsp page
         request.getRequestDispatcher("/welcome.jsp").forward(request, response);

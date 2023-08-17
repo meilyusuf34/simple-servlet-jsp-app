@@ -4,9 +4,9 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
     <script src="assets/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#loginForm").submit(function(event) {
@@ -36,7 +36,7 @@
                     },
                     success: function(response) {
                         if (response === "success") {
-                            window.location.href = "WelcomeServlet";
+                            window.location.href = "WelcomeServlet?username=" + encodeURIComponent(username);
                         } else {
                             $("#errorMsg").text("Username and Password did not Match.");
                         }
